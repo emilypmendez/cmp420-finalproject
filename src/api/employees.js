@@ -2,8 +2,9 @@ import axios from 'axios';
 
 // Set the base URL for your API
 const api = axios.create({
-    baseURL: 'http://cmp420-finalproject.netlify.app/api'
+    baseURL: 'http://employee-management.netlify.app/api'
 });
+// http://localhost:8080/api -- DEVELOPMENT URL
 
 // check for data
 axios.get('/api/employees')
