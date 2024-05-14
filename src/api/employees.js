@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Set the base URL for your API
+// Set the base URL for the API
 const api = axios.create({
     baseURL: 'http://cmp420-final-project.netlify.app/api'
 });
