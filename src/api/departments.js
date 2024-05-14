@@ -1,9 +1,10 @@
 import axios from 'axios';
 
-// Set the base URL for your API
+// Set the base URL for the API
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api'
+    baseURL: 'http://cmp420-final-project.netlify.app/api'
 });
+// 'http://localhost:8080/api' -- DEVELOPMENT URL
 
 // API service for departments
 
