@@ -30,7 +30,15 @@ const EmployeeList = ({ onSelectEmployee, onEditEmployee }) => {
         setEmployees(employees.filter((employee) => employee.e_emplid !== e_emplid));
     };
 
+    // Display a loading message while the data is being fetched
+    useEffect(() => {
+        if (!Array.isArray(employees)) {
+            return <div>Loading...</div>; // or handle the error appropriately
+        }
+    }, [employees]);
+
     return (
+        
         <div>
             <h2>Employee List</h2>
             <p>

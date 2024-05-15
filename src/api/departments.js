@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Set the base URL for the API
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api'
+    baseURL: '/.netlify/functions/server/api'
 });
 // 'http://localhost:8080/api' -- DEVELOPMENT URL
 
